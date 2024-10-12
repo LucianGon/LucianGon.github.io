@@ -1,0 +1,76 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: "VT323", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.hidden {
+    max-width: 600px;
+    margin: 20px auto;
+    line-height: 1.6;
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5px);
+    transform: translateX(-100%);
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.hidden h1 {
+    font-size: 35px;
+    background: linear-gradient(90deg, #4de24d, #00cc00, #129212);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hidden p {
+    font-size: 20px;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.aboutme {
+    transition: all 1s ease;
+    margin: 10px;
+}
+
+.aboutme img {
+    max-width: 80vh;
+    height: auto;
+}
+
+.loading {
+    width: 80vh;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.github, .linkedin {
+    width: 60px;
+}
+
+.code {
+    width: 60vh;
+}
